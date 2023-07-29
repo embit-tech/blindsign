@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=42.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "blindsign"
+version = "0.0.1"
+description = "CLI tool to prepare a message for specter-diy to sign any transaction without verifying it"
+readme = "README.md"
+requires-python = ">=3.7"
+authors = [
+    {name = "Stepan Snigirev", email = "stepan@embit.tech"},
+]
+classifiers = [
+        "Development Status :: 4 - Alpha",
+        "Programming Language :: Python :: 3",
+        "Topic :: Utilities",
+]
+dependencies = [
+    "embit",
+]
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "black",
+    "pre-commit",
+]
+
